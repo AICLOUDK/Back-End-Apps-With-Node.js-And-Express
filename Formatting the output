@@ -1,0 +1,5 @@
+// Define a route handler for GET requests to the root path "/"
+router.get("/",(req,res)=>{
+    // Send a JSON response containing the users array, formatted with an indentation of 4 spaces for readability
+    res.send(JSON.stringify({users}, null, 4));
+});
